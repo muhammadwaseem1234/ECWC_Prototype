@@ -65,9 +65,26 @@ export default function Home() {
                                     </Button>
                                 </Link>
                                 <Link href="/services">
-                                    <Button variant="outline" className="w-full sm:w-auto rounded-xl border-2 border-slate-200 hover:border-primary/30 hover:bg-primary/5 font-semibold px-8 h-14 text-base transition-all duration-300">
-                                        Our Services
-                                    </Button>
+                                    <Button
+    variant="outline"
+    className="
+        w-full sm:w-auto
+        h-14 px-8 rounded-xl
+        font-semibold text-base
+        border-2 border-slate-200
+        text-slate-800
+        bg-white/80 backdrop-blur
+        shadow-md
+        hover:border-secondary/60
+        hover:bg-secondary/5
+        hover:shadow-lg hover:shadow-secondary/20
+        hover:-translate-y-0.5
+        transition-all duration-300
+        btn-shine
+    "
+>
+    Our Services
+</Button>
                                 </Link>
                             </div>
 

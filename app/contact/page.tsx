@@ -178,25 +178,46 @@ export default function ContactPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 md:py-20 bg-gradient-to-br from-primary via-primary to-primary/90 relative overflow-hidden">
-                <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
-                <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl" />
-                
-                <div className="container px-4 sm:px-6 lg:px-8 mx-auto text-center relative">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                        Want to Support Our Cause?
-                    </h2>
-                    <p className="text-lg text-white/80 max-w-xl mx-auto mb-8">
-                        Help us build the Masjid and serve the community. Every contribution makes a difference.
-                    </p>
-                    <Link href="/project">
-                        <Button className="bg-white text-primary hover:bg-white/90 font-bold h-14 px-10 rounded-xl shadow-xl text-base">
-                            Donate Now
-                            <ArrowRight className="w-5 h-5 ml-2" />
-                        </Button>
-                    </Link>
-                </div>
-            </section>
+<section className="relative overflow-hidden bg-gradient-to-br from-primary/90 via-primary to-primary py-16 md:py-20">
+    {/* Background */}
+    <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
+    <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl" />
+
+    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Card */}
+        <div
+            className="
+                mx-auto max-w-3xl
+                rounded-2xl
+                bg-white/95 backdrop-blur
+                shadow-2xl
+                border border-white/40
+                px-8 py-10 sm:px-12 sm:py-12
+                text-center
+            "
+        >
+            {/* Gold accent line */}
+            <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500" />
+
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                Want to Support Our Cause?
+            </h2>
+
+            <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto mb-8 leading-relaxed">
+                Help us build the Masjid and serve the community.  
+                <span className="font-medium text-slate-700">
+                    Every contribution brings lasting reward.
+                </span>
+            </p>
+
+            <Link href="/project">
+                <Button className="rounded-xl bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold px-6 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300 btn-shine">
+                                    Donate Now
+                                </Button>
+            </Link>
+        </div>
+    </div>
+</section>
 
             <Footer />
         </main>
