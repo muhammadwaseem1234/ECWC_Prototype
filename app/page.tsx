@@ -11,7 +11,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Home() {
     return (
-        <main className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-white to-slate-50">
+        <main id="main-content" className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-white to-slate-50">
             {/* Subtle background pattern */}
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <div className="fixed inset-0 bg-gradient-to-br from-primary/[0.02] via-transparent to-secondary/[0.02] pointer-events-none -z-10" />
@@ -25,7 +25,7 @@ export default function Home() {
                         {/* Left Content */}
                         <div className="flex flex-col justify-center space-y-6 sm:space-y-8">
                             {/* Badge */}
-                            <div className="inline-flex items-center self-start gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/50 px-4 py-2 text-sm font-semibold text-secondary-700 border border-secondary/20 shadow-sm">
+                            <div className="inline-flex items-center self-start gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/50 px-4 py-2 text-sm font-semibold text-amber-700 border border-secondary/20 shadow-sm">
                                 <Sparkles className="w-4 h-4" />
                                 <span>Grounded in Qur'an and Sunnah</span>
                             </div>
@@ -65,9 +65,26 @@ export default function Home() {
                                     </Button>
                                 </Link>
                                 <Link href="/services">
-                                <Button className=" h-14 w-full rounded-xl bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold px-6 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300 btn-shine">
-                                    Our Services
-                                </Button>
+                                    <Button
+    variant="outline"
+    className="
+        w-full sm:w-auto
+        h-14 px-8 rounded-xl
+        font-semibold text-base
+        border-2 border-slate-200
+        text-slate-800
+        bg-white/80 backdrop-blur
+        shadow-md
+        hover:border-secondary/60
+        hover:bg-secondary/5
+        hover:shadow-lg hover:shadow-secondary/20
+        hover:-translate-y-0.5
+        transition-all duration-300
+        btn-shine
+    "
+>
+    Our Services
+</Button>
                                 </Link>
                             </div>
 

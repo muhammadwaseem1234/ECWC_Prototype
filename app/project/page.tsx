@@ -5,6 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Progress } from "@/components/ui/progress";
 import { Landmark, CreditCard, QrCode, Heart, Target, TrendingUp, Copy, CheckCircle2, Shield, Users } from "lucide-react";
 import { ProjectGallery } from "@/components/project/ProjectGallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "The Masjid Project",
+    description: "Support the construction of the first Ahle Hadith Masjid & Welfare Centre in Palavakkam. Donate now and earn Sadaqah Jariyah.",
+};
 
 export default function ProjectPage() {
     const currentAmount = 12500000;
@@ -26,7 +32,7 @@ export default function ProjectPage() {
     ];
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col relative">
+        <main id="main-content" className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col relative">
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <div className="fixed inset-0 bg-gradient-to-br from-primary/[0.02] via-transparent to-secondary/[0.02] pointer-events-none -z-10" />
             <Navbar />

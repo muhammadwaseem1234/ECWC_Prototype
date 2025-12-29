@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { MapPin, Mail, Phone, ArrowRight, Heart, ExternalLink } from 'lucide-react';
 
 const quickLinks = [
+    { href: '/about', label: 'About Us' },
     { href: '/project', label: 'The Masjid Project' },
     { href: '/services', label: 'Our Services' },
     { href: '/events', label: 'Events & Lectures' },

@@ -18,7 +18,7 @@ export function ProjectProgress() {
             
             <CardHeader className="pt-6 pb-4">
                 <div className="flex items-center justify-between mb-4">
-                    <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/30 px-4 py-1.5 text-xs font-bold text-secondary-700 border border-secondary/20">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/30 px-4 py-1.5 text-xs font-bold text-amber-700 border border-secondary/20">
                         <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
                         Phase 1: Land Acquisition
                     </div>

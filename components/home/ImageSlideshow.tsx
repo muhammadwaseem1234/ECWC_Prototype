@@ -135,7 +135,7 @@ export function ImageSlideshow() {
                                     : 'bg-white/40 w-2 hover:bg-white/60'
                             )}
                             aria-label={`Go to slide ${index + 1}`}
-                            aria-current={current === index ? 'true' : 'false'}
+                            aria-current={current === index ? true : undefined}
                         />
                     ))}
                 </div>
