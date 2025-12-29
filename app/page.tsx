@@ -11,7 +11,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Home() {
     return (
-        <main className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-white to-slate-50">
+        <main id="main-content" className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 via-white to-slate-50">
             {/* Subtle background pattern */}
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <div className="fixed inset-0 bg-gradient-to-br from-primary/[0.02] via-transparent to-secondary/[0.02] pointer-events-none -z-10" />
@@ -25,7 +25,7 @@ export default function Home() {
                         {/* Left Content */}
                         <div className="flex flex-col justify-center space-y-6 sm:space-y-8">
                             {/* Badge */}
-                            <div className="inline-flex items-center self-start gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/50 px-4 py-2 text-sm font-semibold text-secondary-700 border border-secondary/20 shadow-sm">
+                            <div className="inline-flex items-center self-start gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/50 px-4 py-2 text-sm font-semibold text-amber-700 border border-secondary/20 shadow-sm">
                                 <Sparkles className="w-4 h-4" />
                                 <span>Grounded in Qur'an and Sunnah</span>
                             </div>

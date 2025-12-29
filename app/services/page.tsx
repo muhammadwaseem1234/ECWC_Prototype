@@ -3,6 +3,12 @@ import { Footer } from "@/components/layout/Footer";
 import { BookOpen, Scale, HeartHandshake, Users, GraduationCap, Library, Utensils, Coins, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Services",
+    description: "Explore ECWC's comprehensive welfare and educational services including Hifdh School, Baithulmaal, Counseling, Youth programs, and more.",
+};
 
 export default function ServicesPage() {
     const services = [
@@ -84,7 +90,7 @@ export default function ServicesPage() {
     };
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 relative">
+        <main id="main-content" className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 relative flex flex-col">
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <div className="fixed inset-0 bg-gradient-to-br from-primary/[0.02] via-transparent to-secondary/[0.02] pointer-events-none -z-10" />
             <Navbar />
@@ -109,7 +115,7 @@ export default function ServicesPage() {
             </section>
 
             {/* Services Grid */}
-            <section className="pb-16 md:pb-24 container px-4 sm:px-6 lg:px-8 mx-auto">
+            <section className="pb-16 md:pb-24 container px-4 sm:px-6 lg:px-8 mx-auto flex-1">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
                     {services.map((service, index) => {
                         const colors = colorClasses[service.color];

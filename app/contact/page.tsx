@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock, MessageCircle, ArrowRight, Send } from "lucide-react";
 import { MapWidget } from "@/components/common/MapWidget";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact Us",
+    description: "Get in touch with ECWC - East Coast Community & Welfare Centre. Find our location, phone numbers, email, and office hours.",
+};
 
 export default function ContactPage() {
     const contactInfo = [
@@ -46,7 +52,7 @@ export default function ContactPage() {
     };
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col">
+        <main id="main-content" className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col">
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <Navbar />
 
@@ -211,9 +217,9 @@ export default function ContactPage() {
             </p>
 
             <Link href="/project">
-                <Button className="rounded-xl bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold px-6 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300 btn-shine">
-                                    Donate Now
-                                </Button>
+                <Button className="h-14 px-8 rounded-xl bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold text-base shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300 btn-shine">
+                    Donate Now
+                </Button>
             </Link>
         </div>
     </div>

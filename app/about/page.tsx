@@ -3,6 +3,12 @@ import { Footer } from "@/components/layout/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapWidget } from "@/components/common/MapWidget";
 import { Heart, BookOpen, Users, Target, Award, Sparkles } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "Learn about ECWC - East Coast Community & Welfare Centre. A community-driven initiative striving to establish a center of worship, education, and welfare.",
+};
 
 const values = [
     {
@@ -36,14 +42,14 @@ const milestones = [
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-slate-50 flex flex-col">
+        <main id="main-content" className="min-h-screen bg-slate-50 flex flex-col">
             <Navbar />
 
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-br from-primary via-primary-800 to-primary-900 pt-32 pb-24 overflow-hidden">
+            <div className="relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 pt-32 pb-24 overflow-hidden">
                 <div className="absolute inset-0 bg-dot-pattern opacity-10" />
                 <div className="absolute top-20 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl" />
-                <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary-400/20 rounded-full blur-3xl" />
+                <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
                 
                 <div className="container px-4 md:px-6 mx-auto text-center relative z-10">
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
@@ -59,7 +65,7 @@ export default function AboutPage() {
                             </svg>
                         </span>
                     </h1>
-                    <p className="text-primary-100 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
+                    <p className="text-white/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
                         A community-driven initiative striving to establish a center of worship, education, and welfare for the East Coast Muslim community.
                     </p>
                 </div>
@@ -70,14 +76,14 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-30" />
                 <div className="container px-4 md:px-6 mx-auto relative z-10">
                     <div className="max-w-4xl mx-auto">
-                        <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary-50 to-white border border-primary-100 shadow-lg">
-                            <div className="absolute -top-4 left-8 bg-secondary text-primary-900 text-4xl font-serif px-4 py-2 rounded-lg shadow-md">
+                        <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary/5 to-white border border-primary/10 shadow-lg">
+                            <div className="absolute -top-4 left-8 bg-secondary text-slate-900 text-4xl font-serif px-4 py-2 rounded-lg shadow-md">
                                 "
                             </div>
-                            <blockquote className="text-xl md:text-2xl lg:text-3xl font-serif text-primary-900 italic leading-relaxed text-center pt-4">
+                            <blockquote className="text-xl md:text-2xl lg:text-3xl font-serif text-slate-900 italic leading-relaxed text-center pt-4">
                                 Firmly grounded in the Qur'an and Sunnah upon the understanding of the Salaf as-Sāliḥ.
                             </blockquote>
-                            <div className="absolute -bottom-4 right-8 bg-secondary text-primary-900 text-4xl font-serif px-4 py-2 rounded-lg shadow-md">
+                            <div className="absolute -bottom-4 right-8 bg-secondary text-slate-900 text-4xl font-serif px-4 py-2 rounded-lg shadow-md">
                                 "
                             </div>
                         </div>
@@ -92,9 +98,9 @@ export default function AboutPage() {
             <section className="py-20 bg-slate-50">
                 <div className="container px-4 md:px-6 mx-auto">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2 bg-primary-100 rounded-full px-4 py-2 mb-4">
+                        <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-4">
                             <Award className="w-4 h-4 text-primary" />
-                            <span className="text-sm text-primary-700 font-semibold">Our Foundation</span>
+                            <span className="text-sm text-primary font-semibold">Our Foundation</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Core Values</h2>
                         <p className="mt-4 text-slate-500 max-w-2xl mx-auto">The principles that guide everything we do</p>
@@ -104,7 +110,7 @@ export default function AboutPage() {
                             <Card key={index} className="group relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 <CardContent className="p-8 text-center relative z-10">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-primary/20 group-hover:scale-110 transition-transform duration-300">
+                                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-primary/20 group-hover:scale-110 transition-transform duration-300">
                                         <value.icon className="w-8 h-8 text-white" />
                                     </div>
                                     <h3 className="font-bold text-slate-900 text-lg mb-3">{value.title}</h3>
@@ -131,10 +137,10 @@ export default function AboutPage() {
                             <div className="space-y-8">
                                 {milestones.map((milestone, index) => (
                                     <div key={index} className="relative flex gap-6 md:gap-8 items-start">
-                                        <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-primary-700 rounded-2xl flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary/20 z-10">
+                                        <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary/20 z-10">
                                             {milestone.year}
                                         </div>
-                                        <div className="flex-1 bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-primary-200 hover:shadow-md transition-all duration-300">
+                                        <div className="flex-1 bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:border-primary/20 hover:shadow-md transition-all duration-300">
                                             <h3 className="font-bold text-slate-900 text-lg">{milestone.event}</h3>
                                             <p className="text-slate-500 mt-2">{milestone.description}</p>
                                         </div>
@@ -152,7 +158,7 @@ export default function AboutPage() {
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2 bg-secondary/20 rounded-full px-4 py-2 mb-4">
                             <Users className="w-4 h-4 text-secondary" />
-                            <span className="text-sm text-primary-700 font-semibold">Leadership</span>
+                            <span className="text-sm text-primary font-semibold">Leadership</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Committee Members</h2>
                         <p className="mt-4 text-slate-500 max-w-2xl mx-auto">Dedicated volunteers serving the community</p>
@@ -175,7 +181,7 @@ export default function AboutPage() {
                                         </div>
                                     </div>
                                     <h3 className="font-bold text-slate-900">{member.name}</h3>
-                                    <p className="text-sm text-primary-600 font-medium mt-1">{member.role}</p>
+                                    <p className="text-sm text-primary font-medium mt-1">{member.role}</p>
                                 </CardContent>
                             </Card>
                         ))}

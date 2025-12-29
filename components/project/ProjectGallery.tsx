@@ -10,12 +10,14 @@ const slides = [
     '/slides/slide1.png',
     '/slides/slide2.png',
     '/slides/slide3.png',
+    '/slides/slide4.png',
 ];
 
 const captions = [
     'Proposed site for the Masjid',
     'Architectural concept design',
     'Community gathering vision',
+    'Progress on construction',
 ];
 
 export function ProjectGallery() {
