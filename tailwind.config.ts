@@ -32,10 +32,10 @@ const config: Config = {
                     400: '#38bdf8',
                     500: '#0ea5e9',
                     600: '#0284c7',
-                    700: '#0369a1',
-                    800: '#075985',
-                    900: '#0f172a', // Slate 900 / Navy
-                    950: '#020617',
+                    700: '#4a1d6e',
+                    800: '#2e0f45',
+                    900: '#130426', // Dark Purple
+                    950: '#0a0114',
                 },
                 secondary: {
                     DEFAULT: "hsl(var(--secondary))",
