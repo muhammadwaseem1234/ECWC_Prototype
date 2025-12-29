@@ -65,9 +65,9 @@ export default function Home() {
                                     </Button>
                                 </Link>
                                 <Link href="/services">
-                                    <Button variant="outline" className="w-full sm:w-auto rounded-xl border-2 border-slate-200 hover:border-primary/30 hover:bg-primary/5 font-semibold px-8 h-14 text-base transition-all duration-300">
-                                        Our Services
-                                    </Button>
+                                <Button className=" h-14 w-full rounded-xl bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold px-6 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300 btn-shine">
+                                    Our Services
+                                </Button>
                                 </Link>
                             </div>
 

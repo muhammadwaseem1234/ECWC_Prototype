@@ -178,26 +178,42 @@ export default function ContactPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 md:py-20 bg-gradient-to-br from-primary via-primary to-primary/90 relative overflow-hidden">
-                <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
-                <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl" />
+            {/* CTA Section */}
+<section className="py-20 md:py-28 bg-gradient-to-b from-primary via-primary to-primary/90 relative overflow-hidden">
+    {/* Background decoration */}
+    <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
+    <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+    
+    <div className="container px-4 sm:px-6 lg:px-8 mx-auto relative">
+        <div className="max-w-3xl mx-auto">
+            {/* Minimalist White Card */}
+            <div className="relative bg-white rounded-2xl p-12 md:p-16 shadow-2xl">
+                {/* Simple gold accent line */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
                 
-                <div className="container px-4 sm:px-6 lg:px-8 mx-auto text-center relative">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                        Want to Support Our Cause?
+                <div className="text-center">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                        Support Our Cause
                     </h2>
-                    <p className="text-lg text-white/80 max-w-xl mx-auto mb-8">
+                    
+                    <div className="w-12 h-0.5 bg-yellow-500 mx-auto mb-6" />
+                    
+                    <p className="text-lg text-gray-600 max-w-xl mx-auto mb-8 leading-relaxed">
                         Help us build the Masjid and serve the community. Every contribution makes a difference.
                     </p>
+                    
                     <Link href="/project">
-                        <Button className="bg-white text-primary hover:bg-white/90 font-bold h-14 px-10 rounded-xl shadow-xl text-base">
-                            Donate Now
-                            <ArrowRight className="w-5 h-5 ml-2" />
+                        <Button className="rounded-xl bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold px-6 shadow-lg shadow-secondary/25 hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all duration-300 btn-shine">
+                                    Donate Now
+                            <ArrowRight className="h-5 w-5 ml-2" />
                         </Button>
                     </Link>
                 </div>
-            </section>
-
+            </div>
+        </div>
+    </div>
+</section>
             <Footer />
         </main>
     );

@@ -16,7 +16,7 @@ const socialLinks = [
 
 export function Footer() {
     return (
-        <footer className="w-full bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white relative overflow-hidden">
+        <footer className="w-full bg-gradient-to-b from-primary via-primary to-primary/90 text-white relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />

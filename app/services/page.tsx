@@ -182,7 +182,7 @@ export default function ServicesPage() {
                             </Button>
                         </Link>
                         <Link href="/project">
-                            <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white/10 font-bold h-14 px-8 rounded-xl text-base">
+                            <Button variant="outline" className="border-2 border-white/30 text-black hover:text-white hover:bg-white/10 font-bold h-14 px-8 rounded-xl text-base">
                                 Support the Project
                             </Button>
                         </Link>
