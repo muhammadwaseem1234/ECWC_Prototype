@@ -1,80 +1,72 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { BookOpen, Scale, HeartHandshake, Users, GraduationCap, Library, Utensils, Coins, ArrowRight, CheckCircle2 } from "lucide-react";
+import { BookOpen, Scale, HeartHandshake, Users, GraduationCap, Library, Bookmark, Coins, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Our Services",
-    description: "Explore ECWC's comprehensive welfare and educational services including Hifdh School, Baithulmaal, Counseling, Youth programs, and more.",
+    description: "Explore ECWC's comprehensive welfare and educational services including Makthab, Baithulmaal, Tafseer, Youth programs, and more.",
 };
 
 
 export default function ServicesPage() {
     const services = [
         {
-            title: "Hifdh School",
+            title: "Makthab",
             icon: GraduationCap,
             color: "blue",
-            description: "Center of academic & spiritual excellence. NIOS aligned Hifdh program with qualified teachers.",
-            features: ["Quran Memorization", "Islamic Studies", "Academic Education"],
+            description: "Islamic & Academic learning for Kids and adults with qualified teachers.",
+            features: ["Quran Studies", "Islamic Education", "Academic Support"],
             colSpan: "lg:col-span-2",
         },
         {
             title: "Baithulmaal",
             icon: Coins,
             color: "emerald",
-            description: "Transparent Zakat & Sadaqah distribution system to support those in need.",
-            features: ["Zakat Collection", "Sadaqah Distribution", "Financial Aid"],
+            description: "Zakat & Welfare distribution system to support those in need.",
+            features: ["Zakat Collection", "Welfare Distribution", "Financial Aid"],
             colSpan: "lg:col-span-1",
         },
         {
-            title: "Islamic Arbitration",
-            icon: Scale,
-            color: "amber",
-            description: "Shariah-compliant dispute resolution for families & businesses.",
-            features: ["Family Disputes", "Business Matters", "Confidential"],
-            colSpan: "lg:col-span-1",
-        },
-        {
-            title: "Counseling Center",
-            icon: HeartHandshake,
-            color: "rose",
-            description: "Professional mental health support guided by Islamic values.",
-            features: ["Individual Sessions", "Family Counseling", "Youth Support"],
-            colSpan: "lg:col-span-1",
-        },
-        {
-            title: "Youth Wing",
-            icon: Users,
-            color: "violet",
-            description: "Sports, workshops, and volunteering to engage the next generation.",
-            features: ["Sports Activities", "Workshops", "Community Service"],
-            colSpan: "lg:col-span-1",
-        },
-        {
-            title: "Women's Section",
+            title: "Tafseer",
             icon: BookOpen,
+            color: "rose",
+            description: "Bi-Monthly Tafseer Session for deeper understanding of the Quran.",
+            features: ["Quranic Interpretation", "Bi-Monthly Sessions", "Community Learning"],
+            colSpan: "lg:col-span-1",
+        },
+        {
+            title: "Hifz",
+            icon: Bookmark,
+            color: "slate",
+            description: "Quran and Hifz Classes with experienced instructors.",
+            features: ["Quran Memorization", "Tajweed", "Qualified Teachers"],
+            colSpan: "lg:col-span-1",
+        },
+        {
+            title: "Youth",
+            icon: HeartHandshake,
+            color: "violet",
+            description: "BI-Monthly Tarbiya Session to engage and educate the next generation.",
+            features: ["Tarbiya Sessions", "Youth Activities", "Character Building"],
+            colSpan: "lg:col-span-1",
+        },
+        {
+            title: "Sisters' Wing",
+            icon: Users,
             color: "pink",
-            description: "Dedicated space for learning, Tajweed, and community building for sisters.",
-            features: ["Tajweed Classes", "Islamic Studies", "Community Events"],
+            description: "BI-Monthly Sister's Tarbiya Session for learning and community building.",
+            features: ["Tarbiya Sessions", "Islamic Studies", "Community Events"],
             colSpan: "lg:col-span-2",
         },
         {
-            title: "Library & Study",
+            title: "Library",
             icon: Library,
-            color: "slate",
-            description: "Curated collection of authentic Islamic resources and study materials.",
+            color: "amber",
+            description: "Islamic resources and authentic study materials for the community.",
             features: ["Islamic Books", "Study Space", "Research Materials"],
-            colSpan: "lg:col-span-1",
-        },
-        {
-            title: "Iftar & Food Bank",
-            icon: Utensils,
-            color: "orange",
-            description: "Feeding the community during Ramadan and supporting families year-round.",
-            features: ["Ramadan Iftar", "Weekly Distribution", "Emergency Support"],
             colSpan: "lg:col-span-1",
         },
     ];

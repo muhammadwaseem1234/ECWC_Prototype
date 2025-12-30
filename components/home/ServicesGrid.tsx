@@ -1,10 +1,11 @@
-import { BookOpen, Scale, HeartHandshake, Users, GraduationCap, Library, ArrowRight } from "lucide-react";
+import { color } from "framer-motion";
+import { BookOpen, Scale, HeartHandshake, Users, GraduationCap, Library, ArrowRight, Bookmark } from "lucide-react";
 import Link from "next/link";
 
 const services = [
     {
-        title: "Education",
-        description: "Islamic & Academic learning",
+        title: "Makthab",
+        description: "Islamic & Academic learning for Kids and adults",
         icon: GraduationCap,
         color: "from-blue-500 to-indigo-500",
         bgColor: "bg-blue-50",
@@ -19,25 +20,34 @@ const services = [
         hoverBg: "group-hover:bg-emerald-500",
     },
     {
-        title: "Counseling",
-        description: "Spiritual & Mental support",
-        icon: HeartHandshake,
+        title: "Tafseer",
+        description: "Bi-Monthly Tafseer Session",
+        icon: BookOpen,
         color: "from-rose-500 to-pink-500",
         bgColor: "bg-rose-50",
         hoverBg: "group-hover:bg-rose-500",
     },
     {
+        title: "Hifz",
+        description: "Quran and Hifz Classes",
+        icon: Bookmark,
+        color: "from-neutral-500 to-neutral-400",
+        bgColor: "bg-neutral-50",
+        hoverBg: "group-hover:bg-neutral-500",
+
+    },
+    {
         title: "Youth",
-        description: "Programs & Activities",
-        icon: Users,
+        description: "BI-Monthly Tarbiya Session",
+        icon: HeartHandshake,
         color: "from-violet-500 to-purple-500",
         bgColor: "bg-violet-50",
         hoverBg: "group-hover:bg-violet-500",
     },
     {
         title: "Sisters' Wing",
-        description: "Women's programs",
-        icon: BookOpen,
+        description: "BI-Monthly Sister's Tarbiya Session",
+        icon: Users,
         color: "from-pink-500 to-rose-400",
         bgColor: "bg-pink-50",
         hoverBg: "group-hover:bg-pink-500",
