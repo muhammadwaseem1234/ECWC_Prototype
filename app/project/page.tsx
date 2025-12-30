@@ -5,6 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Progress } from "@/components/ui/progress";
 import { Landmark, CreditCard, QrCode, Heart, Target, TrendingUp, Copy, CheckCircle2, Shield, Users } from "lucide-react";
 import { ProjectGallery } from "@/components/project/ProjectGallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "The Masjid Project",
+    description: "Support the construction of the first Ahle Hadith Masjid & Welfare Centre in Palavakkam. Donate now and earn Sadaqah Jariyah.",
+};
 
 export default function ProjectPage() {
     const currentAmount = 12500000;
@@ -26,7 +32,7 @@ export default function ProjectPage() {
     ];
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col relative">
+        <main id="main-content" className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col relative">
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <div className="fixed inset-0 bg-gradient-to-br from-primary/[0.02] via-transparent to-secondary/[0.02] pointer-events-none -z-10" />
             <Navbar />
@@ -200,7 +206,7 @@ export default function ProjectPage() {
 
                         {/* CTA Button */}
                         <div className="text-center pt-4">
-                            <Button className="bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold h-16 px-12 text-lg rounded-2xl shadow-xl shadow-secondary/25 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300">
+                            <Button className="bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold h-16 px-12 text-lg rounded-2xl shadow-xl shadow-secondary/25 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 btn-shine">
                                 <Heart className="w-6 h-6 mr-3" />
                                 Donate Now & Earn Sadaqah Jariyah
                             </Button>

@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, MapPin, Play, Youtube, ArrowRight, Users } from "lucide-react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Events & Lectures",
+    description: "Join our gatherings of knowledge and remembrance. View upcoming Islamic lectures, events, and past recordings from ECWC.",
+};
 
 export default function EventsPage() {
     const recentVideos = [
@@ -13,7 +19,7 @@ export default function EventsPage() {
     ];
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col">
+        <main id="main-content" className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col">
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <Navbar />
 
@@ -90,7 +96,7 @@ export default function EventsPage() {
                             <div className="flex flex-wrap gap-3">
                                 <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100">
                                     <Calendar className="w-4 h-4 text-primary" />
-                                    <span>Fri, Jan 5th, 2025</span>
+                                    <span>Fri, Jan 3rd, 2026</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100">
                                     <Clock className="w-4 h-4 text-primary" />
@@ -107,7 +113,21 @@ export default function EventsPage() {
                                     <Calendar className="w-5 h-5 mr-2" />
                                     Add to Calendar
                                 </Button>
-                                <Button variant="outline" className="border-2 border-slate-200 hover:bg-slate-50 font-semibold h-12 px-8 rounded-xl">
+                                <Button variant="outline" className="
+        w-full sm:w-auto
+        h-13 px-8 rounded-xl
+        font-semibold text-base
+        border-2 border-slate-200
+        text-slate-800
+        bg-white/80 backdrop-blur
+        shadow-md
+        hover:border-secondary/60
+        hover:bg-secondary/5
+        hover:shadow-lg hover:shadow-secondary/20
+        hover:-translate-y-0.5
+        transition-all duration-300
+        btn-shine
+    ">
                                     Get Directions
                                     <ArrowRight className="w-4 h-4 ml-2" />
                                 </Button>
@@ -167,8 +187,7 @@ export default function EventsPage() {
                                     <iframe
                                         className="w-full h-full"
                                         src={`https://www.youtube.com/embed/${videoId}`}
-                                        title={`YouTube video player ${index + 1}`}
-                                        frameBorder="0"
+                                        title={`ECWC Lecture Recording ${index + 1}`}
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowFullScreen
                                     ></iframe>

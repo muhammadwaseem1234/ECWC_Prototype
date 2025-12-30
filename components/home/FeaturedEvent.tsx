@@ -43,7 +43,7 @@ export function FeaturedEvent() {
                             <div className="flex flex-wrap gap-3 md:gap-4">
                                 <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50/80 px-4 py-2 rounded-xl border border-slate-100">
                                     <Calendar className="w-4 h-4 text-primary" />
-                                    <span>Fri, Jan 5th</span>
+                                    <span>Fri, Jan 3rd, 2026</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50/80 px-4 py-2 rounded-xl border border-slate-100">
                                     <Clock className="w-4 h-4 text-primary" />
