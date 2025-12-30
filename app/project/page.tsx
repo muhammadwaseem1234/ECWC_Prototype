@@ -205,8 +205,8 @@ export default function ProjectPage() {
                         </div>
 
                         {/* CTA Button */}
-                        <div className="text-center pt-4">
-                            <Button className="bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold h-16 px-12 text-lg rounded-2xl shadow-xl shadow-secondary/25 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 btn-shine">
+                        <div className="pt-4 flex justify-center">
+                            <Button className=" w-full sm:w-auto bg-gradient-to-r from-secondary to-amber-500 hover:from-secondary/90 hover:to-amber-500/90 text-white font-bold h-16 px-6 sm:px-12 text-base sm:text-lg rounded-2xl shadow-xl flex items-center justify-center gap-2 shadow-secondary/25 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 btn-shine">
                                 <Heart className="w-6 h-6 mr-3" />
                                 Donate Now & Earn Sadaqah Jariyah
                             </Button>

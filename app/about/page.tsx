@@ -46,14 +46,13 @@ export default function AboutPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 pt-32 pb-24 overflow-hidden">
-                <div className="absolute inset-0 bg-dot-pattern opacity-10" />
+            <div className="relative bg-gradient-to-b from-primary via-primary to-primary/90 pt-32 pb-24 overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                 <div className="absolute top-20 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl" />
                 <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
                 
                 <div className="container px-4 md:px-6 mx-auto text-center relative z-10">
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
-                        <Sparkles className="w-4 h-4 text-secondary" />
                         <span className="text-sm text-white/90 font-medium">Est. 2019 • Chennai, India</span>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6">

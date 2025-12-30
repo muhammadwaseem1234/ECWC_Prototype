@@ -25,11 +25,9 @@ export default function Home() {
                         {/* Left Content */}
                         <div className="flex flex-col justify-center space-y-6 sm:space-y-8">
                             {/* Badge */}
-                            <div className="inline-flex items-center self-start gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/50 px-4 py-2 text-sm font-semibold text-amber-700 border border-secondary/20 shadow-sm">
-                                <Sparkles className="w-4 h-4" />
+                            <div className="hidden md:block inline-flex items-center self-start gap-2 rounded-full bg-gradient-to-r from-secondary/10 to-amber-100/50 px-4 py-2 text-sm font-semibold text-amber-700 border border-secondary/20 shadow-sm">
                                 <span>Grounded in Qur'an and Sunnah</span>
                             </div>
-
                             {/* Main Heading */}
                             <div className="space-y-4">
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
@@ -58,9 +56,9 @@ export default function Home() {
 
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                                <Link href="/project">
+                                <Link href="/about">
                                     <Button className="w-full sm:w-auto rounded-xl bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white font-bold px-8 h-14 text-base shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-0.5 transition-all duration-300 group">
-                                        <span>Learn About the Project</span>
+                                        <span>Learn About Us</span>
                                         <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>
@@ -95,7 +93,7 @@ export default function Home() {
                         </div>
 
                         {/* Right Sidebar - Widgets */}
-                        <div className="flex flex-col gap-6 lg:sticky lg:top-28">
+                        <div className=" hidden md:block flex flex-col gap-6 lg:sticky lg:top-28">
                             <ProjectProgress />
                             <PrayerWidget />
                         </div>
