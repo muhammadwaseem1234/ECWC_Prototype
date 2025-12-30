@@ -31,10 +31,10 @@ export default function Home() {
                             {/* Main Heading */}
                             <div className="space-y-4">
                                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                                    Building a Beacon of{" "}
+                                    East Coast Community and Welfare{" "}
                                     <span className="relative inline-block">
                                         <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">
-                                            Guidance
+                                            Center
                                         </span>
                                         <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                                             <path d="M2 10C50 4 150 4 198 10" stroke="url(#paint0_linear)" strokeWidth="3" strokeLinecap="round"/>
