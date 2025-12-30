@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     description: "Explore ECWC's comprehensive welfare and educational services including Hifdh School, Baithulmaal, Counseling, Youth programs, and more.",
 };
 
+
 export default function ServicesPage() {
     const services = [
         {
@@ -90,7 +91,7 @@ export default function ServicesPage() {
     };
 
     return (
-        <main id="main-content" className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 relative flex flex-col">
+        <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 relative">
             <div className="fixed inset-0 bg-dot-pattern opacity-30 pointer-events-none -z-10" />
             <div className="fixed inset-0 bg-gradient-to-br from-primary/[0.02] via-transparent to-secondary/[0.02] pointer-events-none -z-10" />
             <Navbar />
@@ -115,7 +116,7 @@ export default function ServicesPage() {
             </section>
 
             {/* Services Grid */}
-            <section className="pb-16 md:pb-24 container px-4 sm:px-6 lg:px-8 mx-auto flex-1">
+            <section className="pb-16 md:pb-24 container px-4 sm:px-6 lg:px-8 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
                     {services.map((service, index) => {
                         const colors = colorClasses[service.color];
@@ -167,79 +168,36 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* CTA Section – White / Separated */}
-            {/* CTA Section – Matched with Footer Gradient */}
-<section className="relative overflow-hidden bg-gradient-to-b from-primary/90 via-primary to-primary py-20 md:py-28">
-    {/* Background decoration (same language as footer) */}
-    <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
-    <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+            {/* CTA Section */}
+            <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-primary/90 relative overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+                
+                <div className="container px-4 sm:px-6 lg:px-8 mx-auto text-center relative">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                        Want to Get Involved?
+                    </h2>
+                    <p className="text-lg text-white/80 max-w-xl mx-auto mb-8">
+                        Join us in serving the community. Volunteer, donate, or participate in our programs.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link href="/contact">
+                            <Button className="bg-white text-primary hover:bg-white/90 font-bold h-14 px-8 rounded-xl shadow-xl text-base">
+                                Contact Us
+                                <ArrowRight className="w-5 h-5 ml-2" />
+                            </Button>
+                        </Link>
+                        <Link href="/project">
+                            <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white/10 font-bold h-14 px-8 rounded-xl text-base">
+                                Support the Project
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+            </section>
 
-    <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Card */}
-        <div
-            className="
-                mx-auto max-w-4xl
-                rounded-3xl
-                bg-white/95 backdrop-blur
-                shadow-2xl
-                border border-white/40
-                px-8 py-12 sm:px-14 sm:py-16
-                text-center
-            "
-        >
-            {/* Gold Accent */}
-            <div className="mx-auto mb-6 h-1 w-24 rounded-full bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500" />
-
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-                Want to Get Involved?
-            </h2>
-
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Join us in serving the community.  
-                Volunteer, donate, or participate in our programs and initiatives.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
-                    <Button
-                        className="
-                            group h-14 px-10 rounded-xl
-                            bg-primary text-white font-semibold text-base
-                            shadow-lg
-                            hover:bg-primary/90
-                            transition-all duration-300
-                        "
-                    >
-                        Contact Us
-                        <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                </Link>
-
-                <Link href="/project">
-                    <Button
-                        className="
-                            h-14 px-10 rounded-xl
-                            bg-gradient-to-r from-secondary to-amber-500
-                            hover:from-secondary/90 hover:to-amber-500/90
-                            text-white font-bold text-base
-                            shadow-lg shadow-secondary/25
-                            hover:shadow-xl hover:shadow-secondary/30
-                            hover:-translate-y-0.5
-                            transition-all duration-300
-                            btn-shine
-                        "
-                    >
-                        Support the Project
-                    </Button>
-                </Link>
-            </div>
-        </div>
-    </div>
-</section>
-
-<Footer />
-
+            <Footer />
         </main>
     );
 }
